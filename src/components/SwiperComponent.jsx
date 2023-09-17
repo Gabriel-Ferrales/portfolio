@@ -86,14 +86,14 @@ export default function SwiperComponent() {
       </SwiperSlide>
       <SwiperSlide>
         {({ isActive }) => (
-          <div className="h-full w-full flex flex-col px-6 items-center pt-8 sm:justify-start  bg-white bg-zinc-900 text-white text-center sm:items-start sm:text-left sm:px-20">
+          <div className="h-full w-full flex flex-col px-6 items-center pt-8 lg:justify-start  bg-white bg-zinc-900 text-white text-center lg:items-start sm:text-left sm:px-20">
             <h2>
               About me
             </h2>
 
             <div className={isActive ? " w-full" : ""}>
-              <div className="about__content">
-                <div className="about__text">
+              <div className="flex flex-col-reverse">
+                <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
                   {/* Replace the below paragraph with info about yourself */}
                   <p>
                     I am a Front-End developer, based in Hermosillo, Sonora. I
@@ -113,7 +113,7 @@ export default function SwiperComponent() {
                     My Resume
                   </a>
                 </div>
-                <div className="about__photo-container">
+                <div className="max-w-[40rem] self-center lg:self-start">
                   {/* Add a nice photo of yourself */}
                   <img
                     className="about__photo rounded-lg"

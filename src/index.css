@@ -5,14 +5,14 @@
 @layer base {
   html {
     font-family: 'Manrope', system-ui, sans-serif;
-    background-color: #fff
+    background-color: #18181b;
   }
 }
 
 body{
   margin: 0;
   padding: 0;
-  background-color: #999999;
+  background-color: #18181b;
 }
 
 #root {
@@ -21,6 +21,7 @@ body{
   display: flex;
   flex-direction: column;
   height: 100vh;
+  max-width: 1440px;
 }
 
 *{

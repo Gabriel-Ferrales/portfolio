@@ -2,8 +2,6 @@
 /* ----- Basic Setup ----- */
 /* --------------------------------------- */
 
-
-
 :root {
     --font-size-small: 1.8rem;
     --font-size-normal: 2.2rem;
@@ -60,7 +58,6 @@ body {
     font-weight: 400;
     color: #020617;
     line-height: var(--line-height-normal);
-    background: white;
     overflow-x: hidden;
 }
 
@@ -398,40 +395,10 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- About ----- */
 /* --------------------------------------- */
 
-.about__content {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
-
-@media(max-width: 900px) {
-    .about__content {
-        flex-direction: column-reverse;
-        align-items: initial;
-    }
-}
-
-.about__photo-container {
-    width: 90%;
-    margin-bottom: var(--gutter-normal);
-    align-self: center;
-}
-
 .about__photo{
     width: 75%;
 }
 
-@media(min-width: 768px) {
-    .about__text {
-        flex: 0.4 0 35%;
-    }
-    
-    .about__photo-container {
-        flex: 1;
-        margin: 0 var(--gutter-huge) 0 0;
-       
-    }
-}
 
 /* --------------------------------------- */
 /* ----- Contact ----- */
