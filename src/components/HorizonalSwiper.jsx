@@ -15,14 +15,14 @@ export default function HorizontalSwiper() {
       spaceBetween={30}
       freeMode={true}
       loop={true}
-      autoplay={{ delay: 3000, disableOnInteraction: true }}
+      autoplay={{ delay: 12000, disableOnInteraction: true }}
       direction="horizontal"
       pagination={{
         clickable: true,
       }}
       navigation={true}
       modules={[Autoplay, Navigation, Pagination]}
-      className="max-h-[90rem] mr-auto w-full shadow-lg shadow-[#007aff]  rounded-xl px-12 py-8 mt-8"
+      className="max-h-[90rem] mr-auto w-full shadow-lg shadow-[#007aff] rounded-xl px-12 py-8 sm:mt-8"
     >
       <SwiperSlide className="rounded-lg py-12">
         <div className="h-full w-full ">
@@ -35,7 +35,7 @@ export default function HorizontalSwiper() {
                 questions, category, and difficulty level before being presented
                 with trivia questions to answer.
               </p>
-              <ul className="work__list sm:max-lg:flex sm:max-lg:gap-4 sm:max-lg:justify-center">
+              <ul className="work__list grid grid-cols-2 sm:max-lg:flex sm:max-lg:gap-4 sm:max-lg:justify-center">
                 <li>React-Router</li>
                 <li>Fetch API</li>
                 <li>Vanilla CSS</li>
@@ -79,7 +79,7 @@ export default function HorizontalSwiper() {
                 favorite titles in a smooth and compelling navigation
                 experience.
               </p>
-              <ul className="work__list sm:max-lg:flex sm:max-lg:gap-4 sm:max-lg:justify-center">
+              <ul className="work__list grid grid-cols-2 sm:max-lg:flex sm:max-lg:gap-4 sm:max-lg:justify-center">
                 <li>React-Router</li>
                 <li>Fetch API</li>
                 <li>Pagination</li>
@@ -123,7 +123,7 @@ export default function HorizontalSwiper() {
                 openweather API, providing a forecast for the next five days,
                 users can choose from imperial or metric units, search for a city or get their location.
               </p>
-              <ul className="work__list sm:max-lg:flex sm:max-lg:gap-4 sm:max-lg:justify-center">
+              <ul className="work__list grid grid-cols-2 sm:max-lg:flex sm:max-lg:gap-4 sm:max-lg:justify-center">
                 <li>React</li>
                 <li>Fetch API</li>
                 <li>Tailwind CSS</li>
@@ -162,7 +162,7 @@ export default function HorizontalSwiper() {
               <p className="sm:mx-auto">
                 Based on maximum difficulty challenge from Frontend Mentor, this project emulates an e-commerce website, and implents features as a cart and checkout process all made from scratch.  
               </p>
-              <ul className="work__list sm:max-lg:flex sm:max-lg:gap-4 sm:max-lg:justify-center">
+              <ul className="work__list grid grid-cols-2  sm:max-lg:flex sm:max-lg:gap-4 sm:max-lg:justify-center">
                 <li>React Router</li>
                 <li>Tailwind CSS</li>
                 <li>Local Storage State</li>

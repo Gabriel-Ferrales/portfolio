@@ -74,7 +74,7 @@ export default function SwiperComponent() {
       <SwiperSlide>
         {({ isActive }) => (
           <div className="h-full w-full flex flex-col px-6 items-center justify-center sm:justify-start sm:pt-12 bg-white bg-zinc-900 text-white text-center lg:items-start lg:text-left sm:px-20 lg:px-20">
-            <h2 className={isActive ? "active reveal fade-left" : ""}>
+            <h2 className={isActive ? "" : ""}>
               My work
             </h2>
 
@@ -87,11 +87,11 @@ export default function SwiperComponent() {
       <SwiperSlide>
         {({ isActive }) => (
           <div className="h-full w-full flex flex-col px-6 items-center justify-center sm:justify-start sm:pt-12 bg-white bg-zinc-900 text-white text-center sm:items-start sm:text-left sm:px-20">
-            <h2 className={isActive ? "active reveal fade-left" : ""}>
+            <h2>
               About me
             </h2>
 
-            <div className={isActive ? "active reveal fade-left w-full" : ""}>
+            <div className={isActive ? " w-full" : ""}>
               <div className="about__content">
                 <div className="about__text">
                   {/* Replace the below paragraph with info about yourself */}
@@ -129,11 +129,11 @@ export default function SwiperComponent() {
       <SwiperSlide>
         {({ isActive }) => (
           <div className="h-full w-full flex flex-col px-6 items-center justify-center sm:justify-start sm:pt-12 bg-white bg-zinc-900 text-white text-center lg:items-start lg:text-left sm:px-20 lg:px-20">
-            <h2 className={isActive ? "active reveal fade-left" : ""}>
+            <h2 className={isActive ? "" : ""}>
               Contact me
             </h2>
 
-            <div className={isActive ? "active reveal fade-left w-full" : ""}>
+            <div className={isActive ? " w-full" : ""}>
               <div className="contact__info">
                 <p className="mx-auto">
                   Hello there! Whether you're seeking a website for your

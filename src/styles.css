@@ -42,12 +42,18 @@ html {
     scroll-behavior: smooth;
 }
 
+
 @media(max-width: 1000px) {
     html {
         font-size: 52%;
     }
 }
 
+@media(max-width: 767px) {
+    html {
+        font-size: 40%;
+    }
+}
 body {
     font-size: var(--font-size-small);
     font-family: var(--font-stack);
