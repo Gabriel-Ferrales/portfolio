@@ -35,7 +35,7 @@ export default function SwiperComponent() {
     >
       <SwiperSlide>
         <Navbar />
-        <div className="z-10 relative h-full w-full flex flex-col px-6 sm:px-8 items-center justify-center bg-zinc-900 text-white bg-white text-center lg:items-start lg:text-left sm:px-20  overflow-hidden">
+        <div className="z-10 relative h-full w-full flex flex-col px-6 items-center justify-center bg-zinc-900 text-white bg-white text-center lg:items-start lg:text-left sm:px-20 overflow-hidden">
           <div className="z-10 relative ">
             <div className="max-w-3xl">
               <h1 className="text-8xl font-bold">
