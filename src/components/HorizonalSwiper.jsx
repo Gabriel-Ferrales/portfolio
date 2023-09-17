@@ -19,12 +19,13 @@ export default function HorizontalSwiper() {
       direction="horizontal"
       pagination={{
         clickable: true,
+        type: "progressbar"
       }}
       navigation={true}
       modules={[Autoplay, Navigation, Pagination]}
-      className="max-h-[90rem] mr-auto w-full shadow-lg shadow-[#007aff] rounded-xl px-12 py-8 sm:mt-8"
+      className="mr-auto w-full shadow-lg shadow-[#007aff] rounded-xl px-12 py-14 sm:mt-8"
     >
-      <SwiperSlide className="rounded-lg py-12">
+      <SwiperSlide className="rounded-lg">
         <div className="h-full w-full ">
           <div className="work__box">
             <div className="work__text ">
@@ -68,7 +69,7 @@ export default function HorizontalSwiper() {
           </div>
         </div>
       </SwiperSlide>
-      <SwiperSlide className="rounded-lg py-12">
+      <SwiperSlide className="rounded-lg ">
         <div className="h-full w-full">
           <div className="work__box">
             <div className="work__text">
@@ -113,7 +114,7 @@ export default function HorizontalSwiper() {
           </div>
         </div>
       </SwiperSlide>
-      <SwiperSlide className="rounded-lg py-12">
+      <SwiperSlide className="rounded-lg ">
         <div className="h-full w-full">
           <div className="work__box">
             <div className="work__text">
@@ -154,7 +155,7 @@ export default function HorizontalSwiper() {
           </div>
         </div>
       </SwiperSlide>
-      <SwiperSlide className="rounded-lg py-12">
+      <SwiperSlide className="rounded-lg ">
         <div className="h-full w-full">
           <div className="work__box">
             <div className="work__text">
