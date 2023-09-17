@@ -23,10 +23,10 @@ export default function HorizontalSwiper() {
       }}
       navigation={true}
       modules={[Autoplay, Navigation, Pagination]}
-      className="mr-auto w-full shadow-lg shadow-[#007aff] rounded-xl px-12 py-14 sm:mt-8"
+      className="w-full shadow-lg shadow-[#007aff] rounded-xl px-12 py-12 sm:mt-4"
     >
       <SwiperSlide className="rounded-lg">
-        <div className="h-full w-full ">
+        <div className="h-full w-full  ">
           <div className="work__box">
             <div className="work__text ">
               <h3>Quizzical App</h3>
@@ -70,7 +70,7 @@ export default function HorizontalSwiper() {
         </div>
       </SwiperSlide>
       <SwiperSlide className="rounded-lg ">
-        <div className="h-full w-full">
+        <div className="h-full w-full ">
           <div className="work__box">
             <div className="work__text">
               <h3>Flixx App</h3>
@@ -106,7 +106,7 @@ export default function HorizontalSwiper() {
             </div>
             <div className="work__image-box">
               <img
-                src="/projects/flixx.png"
+                src="/projects/flixx2.png"
                 className="work__image rounded-lg"
                 alt="Project 2"
               />
@@ -115,7 +115,7 @@ export default function HorizontalSwiper() {
         </div>
       </SwiperSlide>
       <SwiperSlide className="rounded-lg ">
-        <div className="h-full w-full">
+        <div className="h-full w-full ">
           <div className="work__box">
             <div className="work__text">
               <h3>Wheater App</h3>
@@ -145,7 +145,7 @@ export default function HorizontalSwiper() {
                 </a>
               </div>
             </div>
-            <div className="work__image-box ">
+            <div className="work__image-box">
               <img
                 src="/projects/weather-app.png"
                 className="work__image rounded-lg"
@@ -156,7 +156,7 @@ export default function HorizontalSwiper() {
         </div>
       </SwiperSlide>
       <SwiperSlide className="rounded-lg ">
-        <div className="h-full w-full">
+        <div className="h-full w-full ">
           <div className="work__box">
             <div className="work__text">
               <h3>Audiophile</h3>
