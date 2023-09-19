@@ -23,7 +23,7 @@ export default function HorizontalSwiper() {
       }}
       navigation={true}
       modules={[Autoplay, Navigation, Pagination]}
-      className="w-full shadow-lg shadow-[#007aff] rounded-xl px-12 py-12 sm:mt-4"
+      className="w-full shadow-lg shadow-[#007aff] rounded-xl px-12 py-12 sm:mt-4 "
     >
       <SwiperSlide className="rounded-lg">
         <div className="h-full w-full  ">
@@ -59,10 +59,10 @@ export default function HorizontalSwiper() {
                 </a>
               </div>
             </div>
-            <div className="work__image-box">
+            <div className="work__image-box max-h-[60vh] overflow-hidden relative rounded-lg">
               <img
                 src="/projects/quizzical.png"
-                className="work__image rounded-lg"
+                className="work__image object-cover object-bottom h-full"
                 alt="Project 1"
               />
             </div>
@@ -104,10 +104,10 @@ export default function HorizontalSwiper() {
                 </a>
               </div>
             </div>
-            <div className="work__image-box">
+            <div className="work__image-box max-h-[60vh] overflow-hidden relative rounded-lg">
               <img
                 src="/projects/flixx2.png"
-                className="work__image rounded-lg"
+                className="work__image object-cover object-bottom h-full"
                 alt="Project 2"
               />
             </div>
@@ -145,10 +145,10 @@ export default function HorizontalSwiper() {
                 </a>
               </div>
             </div>
-            <div className="work__image-box">
+            <div className="work__image-box max-h-[60vh] overflow-hidden relative rounded-lg">
               <img
                 src="/projects/weather-app.png"
-                className="work__image rounded-lg"
+                className="work__image object-cover object-bottom h-full"
                 alt="Project 3"
               />
             </div>
@@ -184,10 +184,10 @@ export default function HorizontalSwiper() {
                 </a>
               </div>
             </div>
-            <div className="work__image-box ">
+            <div className="work__image-box max-h-[60vh] overflow-hidden relative rounded-lg">
               <img
                 src="/projects/audiophile.png"
-                className="work__image rounded-lg"
+                className="work__image  object-cover object-bottom h-full"
                 alt="Project 4"
               />
             </div>

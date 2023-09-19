@@ -73,7 +73,7 @@ export default function SwiperComponent() {
 
       <SwiperSlide>
         {({ isActive }) => (
-          <div className="h-full w-full flex flex-col px-6 items-center pt-8 sm:justify-start  bg-white bg-zinc-900 text-white text-center lg:items-start lg:text-left sm:px-20 ">
+          <div className="h-full w-full flex flex-col px-6 items-center pt-8 sm:justify-start  bg-white bg-zinc-900 text-white text-center lg:items-start lg:text-left sm:px-20">
             <h2 className={isActive ? "" : ""}>
               My work
             </h2>

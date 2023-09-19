@@ -6,7 +6,7 @@ export default function Navbar() {
   const swiper = useSwiper()
 
   return ( 
-        <nav className="w-full bg-white dark:bg-zinc-900 dark:text-white" >
+        <nav className="w-full bg-zinc-900 text-white" >
           <ul className="flex justify-end mr-12">
             <li className="nav__item">
               <button  className="nav__link" onClick={() => swiper.slideTo(1)}>
