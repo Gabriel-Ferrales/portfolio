@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Temporary Vite configuration bundles
+vite.config.js.timestamp-*.mjs
