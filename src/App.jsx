@@ -14,7 +14,7 @@ const technologies = [
 const dashboardViews = [
   { file: '01-overview.png', title: 'Overview', description: 'A catalog overview with game, platform, genre and company counts, alongside release trends over time.' },
   { file: 'Pipeline.png', title: 'Pipeline Architecture', description: 'End-to-end batch ELT pipeline integrating Python ingestion, Google Cloud Storage, BigQuery, and dbt, with infrastructure managed through Terraform and reproducible environments using Docker.' },
-  { file: 'Graph-2.png', title: 'dbt Data Lineage', description: 'Dependency graph illustrating the transformation of raw gaming data into validated staging models, intermediate relationships, dimensional models, fact tables, and analytics-ready marts.' },
+  { file: 'igdb-dbt-lineage.png', title: 'dbt Data Lineage', description: 'Dependency graph illustrating the transformation of raw gaming data into validated staging models, intermediate relationships, dimensional models, fact tables, and analytics-ready marts.' },
   { file: '02-platforms-releases.png', title: 'Platforms & releases', description: 'Platform catalog sizes and release events. Recorded release dates may include future or approximate dates; they are not official platform launch dates.' },
   { file: '03-genres-ratings.png', title: 'Genres & ratings', description: 'Game counts by genre and a comparison of average user and critic ratings.' },
   { file: '04-companies.png', title: 'Companies', description: 'Comparisons of games developed and published by companies in the catalog.' },
