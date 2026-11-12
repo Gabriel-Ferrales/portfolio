@@ -13,6 +13,8 @@ const technologies = [
 
 const dashboardViews = [
   { file: '01-overview.png', title: 'Overview', description: 'A catalog overview with game, platform, genre and company counts, alongside release trends over time.' },
+  { file: 'Pipeline.png', title: 'Pipeline Architecture', description: 'End-to-end batch ELT pipeline integrating Python ingestion, Google Cloud Storage, BigQuery, and dbt, with infrastructure managed through Terraform and reproducible environments using Docker.' },
+  { file: 'Graph-2.png', title: 'dbt Data Lineage', description: 'Dependency graph illustrating the transformation of raw gaming data into validated staging models, intermediate relationships, dimensional models, fact tables, and analytics-ready marts.' },
   { file: '02-platforms-releases.png', title: 'Platforms & releases', description: 'Platform catalog sizes and release events. Recorded release dates may include future or approximate dates; they are not official platform launch dates.' },
   { file: '03-genres-ratings.png', title: 'Genres & ratings', description: 'Game counts by genre and a comparison of average user and critic ratings.' },
   { file: '04-companies.png', title: 'Companies', description: 'Comparisons of games developed and published by companies in the catalog.' },
@@ -63,8 +65,8 @@ function App() {
               <p className="data-note">The pipeline runs manually; automated orchestration is future work. IGDB metadata can be incomplete or approximate. Screenshots show a loaded snapshot and may include display filters; ratings reflect the current loaded state, not historical snapshots.</p>
               <div className="actions"><a className="button primary" href="https://datastudio.google.com/reporting/5f8316d4-6de2-4821-923f-601822531579/page/p_is1l4jc67d">Explore live dashboard <span aria-hidden="true">↗</span></a><a className="button" href="https://github.com/Gabriel-Ferrales/igdb-gaming">Source code <span aria-hidden="true">↗</span></a><p className="attribution">Source data: <a className="text-link" href="https://www.igdb.com/">IGDB and its contributors</a></p></div>
             </div>
-            <div className="gallery" role="region" aria-label="Dashboard screenshots">
-              <div className="gallery-views" aria-label="Choose a dashboard view">{dashboardViews.map((item, index) => <button key={item.file} type="button" aria-pressed={index === viewIndex} aria-controls="dashboard-figure" onClick={() => setViewIndex(index)}><span className="view-number">0{index + 1}</span> {item.title}</button>)}</div>
+            <div className="gallery" role="region" aria-label="Project dashboards and architecture">
+              <div className="gallery-views" aria-label="Choose a project image">{dashboardViews.map((item, index) => <button key={item.file} type="button" aria-pressed={index === viewIndex} aria-controls="dashboard-figure" onClick={() => setViewIndex(index)}><span className="view-number">0{index + 1}</span> {item.title}</button>)}</div>
               <figure id="dashboard-figure">
                 <a className="dashboard-image-link" href={imagePath} target="_blank" rel="noreferrer" aria-label={`Open ${view.title} screenshot at full size (new tab)`}><img src={imagePath} alt={view.description} width="2396" height="1796" /></a>
                 <figcaption aria-live="polite" aria-atomic="true"><strong>{view.title}</strong><p>{view.description}</p><a className="text-link" href={imagePath} target="_blank" rel="noreferrer">Open full-size screenshot <span aria-hidden="true">↗</span><span className="sr-only"> (new tab)</span></a></figcaption>
